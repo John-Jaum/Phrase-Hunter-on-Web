@@ -49,7 +49,12 @@ const PHRASES = [
   "PHRASE HUNTER",
   "OPENAI CHATGPT",
   "JAVASCRIPT ROCKS",
-  "WEB DEVELOPMENT"
+  "WEB DEVELOPMENT",
+  "KARYLLE DELANTES",
+  "GAME DEVELOPMENT",
+  "GAME ASSETS",
+  "OPEN WORLD",
+  "CCS 106"
 ];
 
 function getRandomPhrase() {
@@ -251,3 +256,4 @@ document.addEventListener("keydown", (e) => {
 
 // Initial Renderer
 render();
+
