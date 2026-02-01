@@ -1,0 +1,164 @@
+
+/* Base Reset & Page Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #1f2933, #111827);
+  color: #f9fafb;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+/* Screen layout */
+.screen {
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+
+  background: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+/* Headings & Text */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #d1d5db;
+}
+
+
+
+
+
+
+/* Buttons */
+button {
+  background: #22c55e;
+  color: #064e3b;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+
+
+
+
+
+
+/* Game Header (title + lives*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#lives {
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+/* Prase Display */
+#phrase-display {
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+#phrase-display span {
+  display: inline-block;
+  min-width: 1.2rem;
+}
+
+#phrase-display .space {
+  min-width: 0.8rem;
+}
+
+
+
+
+
+
+
+/* Hint & Guessed Letters */
+.hint {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+#guessed-letters {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+
+
+
+
+
+
+/* Win/Loose Screens */
+#win-screen h1 {
+  color: #4ade80;
+}
+
+#lose-screen h1 {
+  color: #f87171;
+}
+
+#win-phrase,
+#lose-phrase {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #f9fafb;
+}

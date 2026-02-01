@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Phrase Hunter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+<body>
+
+  <!-- MAIN MENU SCREEN -->
+  <section id="menu-screen" class="screen">
+    <h1>PHRASE HUNTER 🎯</h1>
+    <p>Guess the hidden phrase before you run out of lives.</p>
+    <button id="start-btn">Start Game</button>
+  </section>
+
+  <!-- GAME SCREEN -->
+  <section id="game-screen" class="screen hidden">
+    <header>
+      <h2>Phrase Hunter</h2>
+      <div id="lives">
+        ❤️ ❤️ ❤️ ❤️ ❤️
+      </div>
+    </header>
+
+    <main>
+      <div id="phrase-display">
+        <!-- Phrase letters go here -->
+      </div>
+
+      <p class="hint">
+        Type a letter on your keyboard
+      </p>
+
+      <div id="guessed-letters">
+        <!-- Guessed letters go here -->
+      </div>
+    </main>
+  </section>
+
+  <!-- WIN SCREEN -->
+  <section id="win-screen" class="screen hidden">
+    <h1>🎉 You Win! 🎉</h1>
+    <p>The phrase was:</p>
+    <p id="win-phrase"></p>
+    <button class="play-again-btn">Play Again</button>
+  </section>
+
+  <!-- LOSE SCREEN -->
+  <section id="lose-screen" class="screen hidden">
+    <h1>💀 Game Over</h1>
+    <p>The phrase was:</p>
+    <p id="lose-phrase"></p>
+    <button class="play-again-btn">Play Again</button>
+  </section>
+
+  <!-- JS -->
+  <script src="game.js"></script>
+</body>
+
+
+</html>
